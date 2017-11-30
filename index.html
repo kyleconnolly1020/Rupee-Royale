@@ -10,7 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <title>Document</title>
 </head>
 
@@ -20,26 +20,26 @@
 
         <div class="jumbotron">
             <h1 class="text-center" id="Title-Screen">
-                <strong>Crystal Collector</strong>
+                    &#160;Rupee  &#160;  &#160;Royale
             </h1>
             <hr>
-            <p class='gameRules'>You will be given a random number at the start of the game.</p>
-            <p class='gameRules'>There are four crystals below. By clicking on a crystal you will add a specific number of points to your total
+            <p class='gameRules'>You will be given a random number at the start of &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;the game.</p>
+            <p class='gameRules'>There are four rupees below. By clicking on a rupee&#160;&#160;&#160;&#160;&#160;&#160; you will add a specific number of points to your total
                 score.
             </p>
-            <p class='gameRules'>You win the game by matching your total score to the random number. You lose the game if your total score goes
+            <p class='gameRules'>You win the game by matching your total score to &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;the random number. You lose the game if your total score goes
                 above the random number.</p>
-            <p class='gameRules'>The value of each crystal is hidden from you until you click on it.</p>
-            <p class='gameRules'>Each time the game starts, the value of each crystal will change.</p>
+            <p class='gameRules'>The value of each rupee is hidden from you until &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;you click on it.</p>
+            <p class='gameRules'>Each time the game starts, the value of each rupee &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;will change.</p>
             <br>
             <h3 class="text-center">
-                <strong>Wins:
+                <strong id = "winID">Wins:
                     <span id='wins'>0</span>
                 </strong>
             </h3>
             <h3 class="text-center">
-                <strong>Losses:
-                    <span id='losses'>0</span>
+                <strong id = "loseID">Losses:
+                    <span>0</span>
                 </strong>
             </h3>
         </div>
@@ -48,7 +48,7 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Match This Score:</h3>
+                        <h3 class="panel-title" id="matchScoreID">Match This Score:</h3>
                     </div>
                     <div class="panel-body text-center">
                         <h2 id="randomNumberScore">0</h2>
@@ -58,7 +58,7 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Your Total Score Is:</h3>
+                        <h3 class="panel-title" id="totalScoreID">Your Total Score Is:</h3>
                     </div>
                     <div class="panel-body text-center">
                         <h2 id="userTotalScore">0</h2>
@@ -79,9 +79,9 @@
             <div class="col-md-2">
             </div>
         </div>
+            <img class = 'anim' src = 'assets/images/IMG-4386.GIF'>
 
-
-
+    <!-- File reference to the javascript -->
     <script src="assets/javascript/game.js"></script>
 </body>
 

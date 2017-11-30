@@ -10,6 +10,7 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
+    $(".anim").hide();
 
     //Have the computer pick a random number between 19 and 120 
     randomNumber = Math.floor(Math.random() * 102) + 19;
@@ -52,16 +53,17 @@ $(document).ready(function () {
         totalScore += purplePoints;
         //Display the updated score
         $("#userTotalScore").text(totalScore);
-        console.log(totalScore);
     });
 
     $("#rupeeContainer").on("click", function () {
+        $(".anim").hide();
         //End the game if total score is equal or greater than the randomNumber
         if (totalScore >= randomNumber) {
             if (totalScore == randomNumber) {
-                alert("You've won");
+                alert("You've won. Enjoy the GIF");
                 //update the wins
                 wins++;
+                $(".anim").show(400);
             }
             else {
                 alert("You've lost");

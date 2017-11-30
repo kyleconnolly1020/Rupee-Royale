@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'Hylian Serif';
+    src: url('HyliaSerifBeta-Regular.otf');
+}
+
 #Title-Screen {
-    color: rgb(61, 187, 189);
+    color: #d3b000;
+    /* (SAVE THIS IS YOU WANT TO REVERT BACK TO OLD COLOR - ALSO WRAP THE ELEMENT IN <Strong>) color: rgb(61, 187, 189); */
+    font-family: 'Hylian Serif';
+}
+
+
+
+.gameRules {
+    font-family: 'Hylian Serif';
+}
+
+.jumbotron {
+    background-image: url('../images/mastersword.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#winID,#loseID,#matchScoreID,#totalScoreID {
+    font-family: 'Hylian Serif';
 }
 
 .rupee {
