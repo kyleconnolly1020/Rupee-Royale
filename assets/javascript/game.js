@@ -63,12 +63,13 @@ $(document).ready(function () {
                 alert("You've won. Enjoy the GIF");
                 //update the wins
                 wins++;
-                $(".anim").show(400);
+                $(".anim").show(1000);
             }
             else {
                 alert("You've lost");
                 //update the losses
                 losses++;
+                console.log(losses);
             }
 
             //The next lines pick new random numbers and reset the total score
@@ -84,10 +85,6 @@ $(document).ready(function () {
             $("#userTotalScore").text(totalScore);
             $("#wins").text(wins);
             $("#losses").text(losses);
-            console.log(greenPoints);
-            console.log(bluePoints);
-            console.log(redPoints);
-            console.log(purplePoints);
         }
     });
 });
