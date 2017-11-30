@@ -11,7 +11,7 @@
 
 
 
-.gameRules {
+.gameRules,#randomNumberScore,#userTotalScore {
     font-family: 'Hylian Serif';
 }
 
