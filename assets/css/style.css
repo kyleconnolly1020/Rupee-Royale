@@ -19,6 +19,7 @@
     background-image: url('../images/mastersword.png');
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 #winID,#loseID,#matchScoreID,#totalScoreID {
@@ -35,6 +36,9 @@
     margin-right: auto;
     display: flex;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .panel-heading {

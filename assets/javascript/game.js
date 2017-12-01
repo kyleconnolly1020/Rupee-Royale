@@ -10,6 +10,8 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
+    var song = new Audio("assets/images/35 lost woods.mp3");
+
     $(".anim").hide();
 
     //Have the computer pick a random number between 19 and 120 
@@ -57,6 +59,8 @@ $(document).ready(function () {
 
     $("#rupeeContainer").on("click", function () {
         $(".anim").hide();
+        song.pause();
+        song.currentTime = 0;
         //End the game if total score is equal or greater than the randomNumber
         if (totalScore >= randomNumber) {
             if (totalScore == randomNumber) {
@@ -64,6 +68,7 @@ $(document).ready(function () {
                 //update the wins
                 wins++;
                 $(".anim").show(1000);
+                song.play();
             }
             else {
                 alert("You've lost");
