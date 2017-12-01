@@ -25,13 +25,7 @@ $(document).ready(function () {
     bluePoints = Math.floor(Math.random() * 12) + 1
     redPoints = Math.floor(Math.random() * 12) + 1
     purplePoints = Math.floor(Math.random() * 12) + 1
-
-    console.log(greenPoints);
-    console.log(bluePoints);
-    console.log(redPoints);
-    console.log(purplePoints);
-
-
+    
     //Iterate the users score upon clicking the image for each crystal 
     $("#greenRupee").on("click", function () {
         totalScore += greenPoints;
@@ -74,7 +68,6 @@ $(document).ready(function () {
                 alert("You've lost");
                 //update the losses
                 losses++;
-                console.log(losses);
             }
 
             //The next lines pick new random numbers and reset the total score
