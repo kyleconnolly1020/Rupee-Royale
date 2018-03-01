@@ -13,5 +13,7 @@ By clicking on the different colored rupees, the user will be able to see how mu
 The game will end when the user either matches the score or goes above the score to be matched. 
 
 Try Rupee Royale! Match the score, and a surprise will be waiting for you! ;)
+
+
 ![Rupee Surprise](assets/images/IMG-4386.GIF)
 
